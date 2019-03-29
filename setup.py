@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="uipath_scaffold_generator",
-    version="0.0.2",
+    version="0.0.3",
     author="Christian Blandford",
     author_email="christianblandford@me.com",
     description="Generator system that provides scaffolding for your UiPath projects/sequences.",
@@ -23,4 +23,5 @@ setuptools.setup(
         "uipath >= 0.0.1",
         "openpyxl >= 2.6.1"
     ],
+    package_data={'uipath_scaffold_generator': ['SequencesToScaffold.xlsx']}
 )
